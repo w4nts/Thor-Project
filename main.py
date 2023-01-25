@@ -46,7 +46,7 @@ async def on_ready():
   os.system('cls')
   print(thorascii)
   print(f'Made By: Qouda and Mali')
-  print(f'Logged in as {client.user}')
+  print(f'Logged in as {thor.user}')
 
 
-client.run(token, bot=False)
+thor.run(token, bot=False)
