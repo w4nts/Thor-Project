@@ -2,13 +2,12 @@ import discord
 import discord.py
 
 
+thorascii = ('''placeholder''')
+
 # - - - - Initialize - - - - #
-intents = discord.Intents().all()
-thor = discord.Client()
-
-
-# - - - - - Start - - - - - #
-print('''placeholder''')
+os.system('clear')
+os.system('cls')
+print(thorascii)
 ScriptQues = input('Do You Want To Continue (yes/no): ')
 
 if ScriptQues.lower == 'yes':
@@ -17,7 +16,18 @@ else:
   end
 
 
-print('''placeholder''')
+os.system('clear')
+os.system('cls')
+print(thorascii)
+prefix = input('prefix: ')
+intents = discord.Intents().all()
+thor = commands.Bot(command_prefix=prefix, self_bot=True)
+client.remove_command('help')
+
+# - - - - - Start - - - - - #
+os.system('clear')
+os.system('cls')
+print(thorascii)
 token = input("Token: ")
 
 # - - - - Commands - - - - #
@@ -25,7 +35,7 @@ token = input("Token: ")
 async def on_ready():
   os.system('clear')
   os.system('cls')
-  print('''placeholder''')
+  print(thorascii)
   print(f'Made By: Qouda and Mali')
   print(f'Logged in as {client.user}')
 
