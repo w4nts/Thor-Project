@@ -1,9 +1,13 @@
 import discord
 import discord.py
 
+
+# - - - - Initialize - - - - #
 intents = discord.Intents().all()
 thor = discord.Client()
 
+
+# - - - - - Start - - - - - #
 print('''placeholder''')
 ScriptQues = input('Do You Want To Continue (yes/no): ')
 
@@ -12,8 +16,11 @@ if ScriptQues.lower == 'yes':
 else:
   end
 
+
 print('''placeholder''')
 token = input("Token: ")
+
+# - - - - Commands - - - - #
 @thor.event
 async def on_ready():
   os.system('clear')
