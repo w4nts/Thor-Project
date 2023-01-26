@@ -49,4 +49,4 @@ async def on_ready():
   print(f'Logged in as {thor.user}')
 
 
-thor.run(token, bot=False)
+thor.run(token, bot=False) 
