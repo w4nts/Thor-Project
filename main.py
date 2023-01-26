@@ -37,7 +37,7 @@ thor.remove_command('help')
 os.system('clear')
 os.system('cls')
 print(thorascii)
-token = os.environ['TOKEN']
+token = input('Token: ')
 
 # - - - - Commands - - - - #
 @thor.event
