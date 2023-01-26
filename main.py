@@ -1,9 +1,9 @@
 import discord
-import discord.py
 import os
 from discord.ext import commands
 from discord.ext.commands import *
-
+os.system('pip install discord==1.0.1')
+os.system('pip install discord.py==1.6.0')
 
 thorascii = ('''    ████████╗██╗  ██╗ ██████╗ ██████╗ 
     ╚══██╔══╝██║  ██║██╔═══██╗██╔══██╗
@@ -19,10 +19,10 @@ os.system('cls')
 print(thorascii)
 ScriptQues = input('Do You Want To Continue (yes/no): ')
 
-if ScriptQues.lower == 'yes':
+if ScriptQues.lower() == 'yes':
   pass
 else:
-  end
+  quit()
 
 
 os.system('clear')
@@ -31,13 +31,13 @@ print(thorascii)
 prefix = input('prefix: ')
 intents = discord.Intents().all()
 thor = commands.Bot(command_prefix=prefix, self_bot=True)
-client.remove_command('help')
+thor.remove_command('help')
 
 # - - - - - Start - - - - - #
 os.system('clear')
 os.system('cls')
 print(thorascii)
-token = input("Token: ")
+token = os.environ['TOKEN']
 
 # - - - - Commands - - - - #
 @thor.event
@@ -45,7 +45,7 @@ async def on_ready():
   os.system('clear')
   os.system('cls')
   print(thorascii)
-  print(f'Made By: Qouda and Mali')
+  print('Made By: Qouda and Mali\nhttps://github.com/w4nts/thor-project')
   print(f'Logged in as {thor.user}')
 
 
